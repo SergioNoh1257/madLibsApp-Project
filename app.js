@@ -1,5 +1,7 @@
 "use strict";
 
+
+document.getElementById('body').onload = () => {
 //Questions and data for ask to user
 let questionArray = [
   "enter an age",
@@ -21,7 +23,7 @@ for (let i = numberOfQuestions; i > 0; i--)
 }
 
 // History
-let originalStory = `<h2>Once upon a time there was a ${userInputs[0]} year old programmer who was debugging a bug on line ${userInputs[1]} of his code.<h2>
+let originalStory = `<h2>Once upon a time there was a ${userInputs[0]} years old programmer who was debugging a bug on line ${userInputs[1]} of his code.<h2>
 
 <h2>He searched that line but found nothing.</h2>
 
@@ -34,11 +36,12 @@ alert("All done!, Ready for your totally-acurate, not-all confusing history?");
 
 // Write History
 console.log(originalStory);
-document.write(originalStory);
+document.body.innerHTML = originalStory;
 
+};
 /* Original Story
 
-Once upon a time there was a 15 year old programmer who was debugging a bug on line 45 of his code.
+Once upon a time there was a 15 years old programmer who was debugging a bug on line 45 of his code.
 
 He searched that line but found nothing.
 
