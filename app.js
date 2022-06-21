@@ -10,7 +10,9 @@ He researched on the Internet, asked in ${userInputs[2]} to be able to solve his
 
 Until he discovered that a ${userInputs[3]} caused an error on line ${userInputs[4]} and that broke the code, he solved it and seeing that it worked, he was happy and went to ${userInputs[5]} to celebrate.`;
 
-console.log(originalStory);
+let numberOfQuestions = 6;
+
+
 
 /* Original Story
 
